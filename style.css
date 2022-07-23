@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root{
+  --green1: #A1B084;
+  --green2: #919E78;
+  --green3: #7F8A68;
+  --green4: #677154;
+  --green5: #4D5416;
+  --crema: #F4EEE0;
+  --ocra1: #D2C38D;
+  --ocra2: #B49B3E;
+  --rosso1: #98493B;
+  --rosso2: #823626;
+}
+
+.prova{
+  background-color: var(--rosso1);
+}
