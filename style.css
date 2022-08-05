@@ -26,11 +26,13 @@ html {
 
 .grid-container { 
   color: var(--ocra1);
+  border-left: 3px solid var(--green1);
   font-family: 'Playfair Display';
   font-size: 300%;
   display: grid;
   grid-template-columns: auto auto;
   margin: 5% 5% 10% 5%;
+  padding-left: 3%;
   gap: 10%;
 }
 
@@ -52,6 +54,13 @@ html {
   gap: 10%;
 }
 
+.subtitle{
+  font-family: 'Montserrat';
+  font-size: 50%;
+  color: var(--ocra1);
+  margin: 3% 3% 3% 0;
+}
+
 .line{
   grid-template-columns: 80% 15%;
 
@@ -67,6 +76,7 @@ html {
   background-image: url("fiore.png");
   background-size: contain;
   background-repeat: no-repeat;
+  text-align: right;
 }
 
 .bro-desc{
