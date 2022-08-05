@@ -30,7 +30,7 @@ html {
   font-size: 300%;
   display: grid;
   grid-template-columns: auto auto;
-  margin: 5%;
+  margin: 5% 5% 10% 5%;
   gap: 10%;
 }
 
@@ -47,18 +47,30 @@ html {
   font-family: 'Playfair Display';
   font-size: 300%;
   display: grid;
-  grid-template-columns: auto auto;
-  margin: 10% 10% 0 10%;
+  grid-template-columns: 15% 80%;
+  margin: 5% 10% 0 5%;
   gap: 10%;
 }
 
-.bro-title{
+.line{
+  grid-template-columns: 80% 15%;
+
+}
+
+.psico{
   background-image: url("foglia3.png");
-  background-size: cover;
-  opacity: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sessuo{
+  background-image: url("fiore.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .bro-desc{
+  border-radius: 12px;
   display:flex;
   align-items: center;
   justify-content: center;
