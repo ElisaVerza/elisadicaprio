@@ -34,7 +34,83 @@ html {
   gap: 10%;
 }
 
-.side{
-  background-repeat: repeat;
-  background-image: url("Camelia.png");
+.grid-container-buttons{
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 10%;
+  margin: 5% 50% 0 0;
+  gap: 10%;
+}
+
+.description{
+  margin: 0 20% 0 0;
+  font-size: 40%;
+  text-align: justify;
+  color: var(--crema);
+  font-family: 'Montserrat';
+}
+
+.my-hr{
+  margin-right: 50%;
+  opacity: 50%;
+  background: var(--green1);
+  border: none;
+  height: 2px;
+}
+
+.center{
+  display: flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+}
+
+.camelia{
+  width: 50%;
+  height: auto;
+}
+
+.button {
+  background-color: var(--green2);
+  border: none;
+  color:var(--crema);
+  padding: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30%;
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: 'Montserrat';
+  transition-duration: 0.4s;
+  box-shadow: 3px 3px 3px  var(--green5);
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: var(--green1);;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
