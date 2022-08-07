@@ -37,7 +37,7 @@ body, html {
   justify-content: flex-start;
 }
 
-.grid-container { 
+.home { 
   color: var(--ocra1);
   border-left: 3px solid var(--green1);
   font-family: 'Playfair Display';
@@ -45,6 +45,29 @@ body, html {
   margin: 5% 5% 5% 3%;
   padding-left: 3%;
   width: 40%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.grid-container { 
+  background-color: var(--green2);
+  margin-top: 5%;
+  color: var(--ocra1);
+  font-family: 'Playfair Display';
+  font-size: 300%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3%;
+  gap: 10%;
+
 }
 
 .grid-container-buttons{
@@ -179,4 +202,26 @@ body, html {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.form{
+  margin-top: 5%;
+}
+
+.contact{
+  font-size: 50%;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 5% 3% 5% 3%;
+}
+
+.contact-title{
+  color: var(--green5);
+  margin-bottom: 5%;
+}
+
+.map{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
