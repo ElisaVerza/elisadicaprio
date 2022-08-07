@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-html {
+body, html {
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
@@ -24,16 +26,25 @@ html {
   background-color: black;
 }
 
+.landing{
+  background-image: url("Camelia1.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .grid-container { 
   color: var(--ocra1);
   border-left: 3px solid var(--green1);
   font-family: 'Playfair Display';
   font-size: 300%;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: 5% 5% 10% 5%;
+  margin: 5% 5% 5% 3%;
   padding-left: 3%;
-  gap: 10%;
+  width: 40%;
 }
 
 .grid-container-buttons{
@@ -80,16 +91,21 @@ html {
 }
 
 .bro-desc{
-  border-radius: 12px;
   display:flex;
   align-items: center;
   justify-content: center;
   padding: 0 10% 0 10%;
-  background-color: rgba(161, 176, 132, 0.5);
+  border-right: 3px solid var(--green1);
   font-size: 40%;
   text-align: justify;
   color: var(--crema);
-  font-family: 'Montserrat';}
+  font-family: 'Montserrat';
+}
+
+.bro-desc-2{
+  border-left: 3px solid var(--green1);
+  border-right: 3px solid black;
+}
 
 .description{
   margin: 0 20% 0 0;
