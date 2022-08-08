@@ -27,23 +27,19 @@ body, html {
 }
 
 .landing{
-  background-image: url("Camelia1.png");
+  background-image: url("Camelia2.png");
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+ 
 }
 
 .home { 
   color: var(--ocra1);
-  border-left: 3px solid var(--green1);
   font-family: 'Playfair Display';
   font-size: 300%;
   margin: 5% 5% 5% 3%;
-  padding-left: 3%;
   width: 40%;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -71,11 +67,17 @@ body, html {
 }
 
 .grid-container-buttons{
+  padding:2%;
   display: grid;
   grid-template-columns: auto auto;
+  width: 50%;
   height: 10%;
-  margin: 5% 50% 0 0;
-  gap: 10%;
+}
+
+.right-side{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .grid-container-bro{
@@ -90,7 +92,7 @@ body, html {
 
 .subtitle{
   font-family: 'Montserrat';
-  font-size: 50%;
+  font-size: 40%;
   color: var(--ocra1);
   margin: 3% 3% 3% 0;
 }
@@ -158,20 +160,18 @@ body, html {
 }
 
 .button {
-  background-color: var(--green2);
   border: none;
-  color: black;
+  color: var(--green2);
+  background-color: black;
   font-weight: bold;
   padding: 2%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30%;
+  font-size: 150%;
   cursor: pointer;
-  border-radius: 12px;
   font-family: 'Montserrat';
   transition-duration: 0.4s;
-  box-shadow: 3px 3px 3px  var(--green5);
   cursor: pointer;
 }
 
@@ -209,6 +209,7 @@ body, html {
 }
 
 .contact{
+  color: black;
   font-size: 50%;
   font-family: 'Montserrat';
   font-weight: bold;
@@ -218,6 +219,7 @@ body, html {
 .contact-title{
   color: var(--green5);
   margin-bottom: 5%;
+  font-size: 125%;
 }
 
 .map{
