@@ -11,6 +11,16 @@
 </head>
 
 <body id="main" class="main">
+    <script>
+
+        var width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+
+        if(width <= 768){
+            document.location = "index-mobile.html";
+        }
+    </script>
     <div class="landing">
         <div class="right-side">
             <div class="grid-container-buttons">
