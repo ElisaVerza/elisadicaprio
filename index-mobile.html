@@ -15,15 +15,62 @@
         <div class="home">
             <div>Elisa di Caprio</div>
             <div class="subtitle"> PSICOLOGA E SESSUOLOGA</div>
-            <p class="description">Ciao sono Lucia, sono una sirena
-                Può sembrare strano ma è una storia vera
-                Noi viviamo in un palazzo giù
-                Nel mare blu Ci accompagna sempre una perla rara
-                Che ci dà magia e una forza strana</p>
+            <p class="description">Nata a Roma, mi sono laureata alla Sapienza Università di Roma in Psicologia e Salute e in Psicologia della Comunicazione e del Marketing. Ho conseguito un Master in Sessuologia e Dinamiche di coppia, presso l’Associazione Italiana di Sessuologia Clinica (AISC). Mi sto attualmente specializzando in Psicoterapia psicodinamica dell’età evolutiva, presso la Scuola IdO - MITE. </p>
             <div class="grid-container-buttons">
                 <button class="button" style="vertical-align:middle"><span>Contatti</span></button>
                 <button class="button" style="vertical-align:middle"><span>Chi sono</span></button>
             </div>                    
         </div>
     </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Camelia2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Camelia1.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span>  
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
 </body>
